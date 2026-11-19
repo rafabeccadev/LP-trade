@@ -1,4 +1,4 @@
 export const siteConfig = {
  whatsappNumber: "",
- courseCheckoutUrl: "https://www.asaas.com/000/c/djdqh3bhxk37hai4",
+ courseCheckoutUrl: "https://pay.cakto.com.br/roqyk9m_1345635",
 };
