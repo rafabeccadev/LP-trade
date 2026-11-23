@@ -1,4 +1,5 @@
 import { siteConfig } from '../siteConfig';
+import { checkoutProps } from '../checkout';
 import { ArrowRight, MessageCircle, ShieldCheck, Zap } from 'lucide-react';
 
 export const CtaSection = () => {
@@ -25,12 +26,12 @@ export const CtaSection = () => {
             </h2>
 
             <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
-              Dê o primeiro passo na arbitragem de criptomoedas com 5 módulos, 68 aulas em vídeo e exemplos práticos usando a Midas. Treinamento por R$ 97 em pagamento único.
+              68 aulas, +16h de conteúdo e exemplos práticos na tela por R$ 97, em pagamento único. Se não for para você, a garantia de 7 dias devolve 100% do valor.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <a
-                href={siteConfig.courseCheckoutUrl}
+                {...checkoutProps('final_cta')}
                 className="checkout-cta w-full sm:w-auto px-8 py-4 rounded-xl font-black text-base text-[#08090C] bg-[#C4F82A] hover:bg-[#D4FF4D] shadow-xl shadow-[#C4F82A]/25 hover:scale-[1.02] active:scale-[0.99] transition-all flex items-center justify-center gap-2 cursor-pointer font-mono"
               >
                 <span>Quero o treinamento por R$ 97</span>
@@ -44,10 +45,10 @@ export const CtaSection = () => {
             <div className="flex flex-wrap items-center justify-center gap-6 pt-4 text-xs text-slate-400 font-mono">
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#C4F82A]" />
-                <span>Curso online</span>
+                <span>Garantia de 7 dias</span>
               </div>
               <span>·</span>
-              <div>68 aulas em vídeo</div>
+              <div>Acesso imediato</div>
               <span>·</span>
               <div>Pagamento único</div>
             </div>

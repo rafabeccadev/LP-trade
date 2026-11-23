@@ -135,7 +135,7 @@ export const MentorshipSection: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center text-xs text-slate-400 font-mono">
-          Treinamento Midas por R$ 97, em pagamento único. A assinatura da plataforma é uma contratação separada.
+          Treinamento Midas por R$ 97, em pagamento único · Garantia de 7 dias
         </div>
 
       </div>

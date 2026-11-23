@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, Check, RotateCcw, ArrowLeftRight } from 'lucide-react';
-import { siteConfig } from '../siteConfig';
+import { checkoutProps } from '../checkout';
 export function Experience() {
  useEffect(() => {
  const elements = document.querySelectorAll('main section h2, main section h3');
@@ -56,6 +56,7 @@ export function Explainer() {
      <button type="button" className="lab-action" onClick={() => setComplete(!complete)}>{complete ? <RotateCcw size={18}/> : <ArrowRight size={18}/>} {complete ? 'Reiniciar exemplo' : 'Simular essa diferença'}</button>
      <p className="lab-note">*Preços fictícios. Taxa ilustrativa de 0,1% por ordem. Não inclui transferência, funding, slippage ou mudanças de preço. Este exemplo não executa operações nem representa rentabilidade garantida.</p>
    </div>
-   <a href={siteConfig.courseCheckoutUrl} className="contact-pill"><span className="contact-pill-icon"><ArrowRight size={22}/></span><span>QUERO APRENDER POR R$ 97</span></a>
+   <p className="explainer-bridge">No treinamento você aprende a fazer essa conta com preços reais — incluindo transferência, funding e slippage.</p>
+   <a {...checkoutProps('explainer')} className="contact-pill"><span className="contact-pill-icon"><ArrowRight size={22}/></span><span>QUERO APRENDER POR R$ 97</span></a>
  </section>;
 }
