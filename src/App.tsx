@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { MentorshipSection } from './components/MentorshipSection';
 import { CoursePractice } from './components/CoursePractice';
+import { TestimonialsSection } from './components/TestimonialsSection';
 import { PricingSection } from './components/PricingSection';
 import { FaqSection } from './components/FaqSection';
 import { CtaSection } from './components/CtaSection';
@@ -18,6 +19,7 @@ export function App() {
    <AudienceSection/>
    <MentorshipSection/>
    <CoursePractice/>
+   <TestimonialsSection/>
    <PricingSection/>
    <FaqSection/>
    <CtaSection/>
